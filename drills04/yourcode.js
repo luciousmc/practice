@@ -31,7 +31,10 @@ function appendTextToElement(className, text) {
     element.append(text);
 }
 
-function addClass(){
+function addClass(element, className){
+    $element = $(element);
+    $element.addClass(className);
+    return $element.length;
 }
 
 function removeElements(){
