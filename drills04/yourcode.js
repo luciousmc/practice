@@ -37,7 +37,8 @@ function addClass(element, className){
     return $element.length;
 }
 
-function removeElements(){
-
+function removeElements(element){
+    $element = $(element);
+    $element.remove();
 }
 
